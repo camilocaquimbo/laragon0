@@ -42,7 +42,7 @@
 
             .content {
                 text-align: center;
-            }
+            }dfsgfdsgdfgsdf
 
             .title {
                 font-size: 84px;
@@ -113,7 +113,13 @@
                         {{ date('d m Y H:i:s', time()) }}
                     </div>
                 </div>
+                <hr>
+                    <div id="app">
+                        <example-component></example-component>
+                    </div>
+                </div>
             </div>
         </div>
+    <script src="{{ asset('js/app.js') }}" ></script>
     </body>
 </html>

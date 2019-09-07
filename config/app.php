@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    //'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://127.0.0.1:8080'), //TODO: CAM urlEditado
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -165,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        TCG\Voyager\VoyagerServiceProvider::class, //TODO: CAM agregadoXraVoyager
 
         /*
          * Application Service Providers...

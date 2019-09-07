@@ -74,3 +74,7 @@ Route::resource('MPrueba2', 'MPrueba2Controller'); //se pueden especificar que s
 Route::view('/contacto', 'contacto')->name('contacto');
 
 Route::post('contacto', 'Prueba1Controller@store');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
